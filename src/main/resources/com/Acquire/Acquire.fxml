@@ -1,0 +1,1233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" text="Acquire" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.Acquire.AcquireController">
+   <content>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="900.0" minWidth="900.0" prefWidth="900.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="500.0" prefWidth="500.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="675.0" minHeight="675.0" prefHeight="675.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="125.0" minHeight="125.0" prefHeight="125.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.columnIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="500.0" prefWidth="500.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="337.5" minHeight="337.5" prefHeight="337.5" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="337.5" minHeight="337.5" prefHeight="337.5" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane maxHeight="337.5" maxWidth="500.0" minHeight="337.5" minWidth="500.0" prefHeight="337.5" prefWidth="500.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="106.25" minWidth="106.25" prefWidth="106.25" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.25" minWidth="56.25" prefWidth="56.25" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.25" minWidth="56.25" prefWidth="56.25" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.25" minWidth="56.25" prefWidth="56.25" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.25" minWidth="56.25" prefWidth="56.25" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.25" minWidth="56.25" prefWidth="56.25" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.25" minWidth="56.25" prefWidth="56.25" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="56.25" minWidth="56.25" prefWidth="56.25" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="56.25" minHeight="56.25" prefHeight="56.25" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="56.25" minHeight="56.25" prefHeight="56.25" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="56.25" minHeight="56.25" prefHeight="56.25" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="56.25" minHeight="56.25" prefHeight="56.25" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="56.25" minHeight="56.25" prefHeight="56.25" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="56.25" minHeight="56.25" prefHeight="56.25" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <TextField editable="false" maxHeight="56.25" maxWidth="106.25" minHeight="56.25" minWidth="106.25" prefHeight="56.25" prefWidth="106.25" text="Chains:">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" maxHeight="56.25" maxWidth="106.25" minHeight="56.25" minWidth="106.25" prefHeight="56.25" prefWidth="106.25" text="Player1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" maxHeight="56.25" maxWidth="106.25" minHeight="56.25" minWidth="106.25" prefHeight="56.25" prefWidth="106.25" text="Player2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" maxHeight="56.25" maxWidth="106.25" minHeight="56.25" minWidth="106.25" prefHeight="56.25" prefWidth="106.25" text="Available:" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" maxHeight="56.25" maxWidth="106.25" minHeight="56.25" minWidth="106.25" prefHeight="56.25" prefWidth="106.25" text="Chain Size" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField editable="false" maxHeight="56.25" maxWidth="106.25" minHeight="56.25" minWidth="106.25" prefHeight="56.25" prefWidth="106.25" text="Cost ($00)" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="18.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="graphL" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" text="L" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="imperialavailable" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="continentalavailable" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="westernavailable" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="festivalavailable" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="americanavailable" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="toweravailable" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="luxoravailable" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="imperialplayer2" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="continentalplayer2" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="westernplayer2" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="festivalplayer2" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="americanplayer2" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="towerplayer2" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="luxorplayer2" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="imperialplayer1" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="continentalplayer1" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="westernplayer1" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="festivalplayer1" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="americanplayer1" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="towerplayer1" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="luxorplayer1" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="graphI" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" text="I" GridPane.columnIndex="7">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="graphC" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" text="C" GridPane.columnIndex="6">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="graphW" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" text="W" GridPane.columnIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="graphF" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" text="F" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="graphA" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" text="A" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="graphT" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" text="T" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="imperialcost" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="continentalcost" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="westerncost" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="festivalcost" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="americancost" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="towercost" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="luxorcost" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="imperialsize" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="continentalsize" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="westernsize" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="festivalsize" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="americansize" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="towersize" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="luxorsize" alignment="CENTER" editable="false" maxHeight="56.25" maxWidth="56.25" minHeight="56.25" minWidth="56.25" prefHeight="56.25" prefWidth="56.25" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <GridPane maxHeight="337.5" maxWidth="500.0" minHeight="337.5" minWidth="500.0" prefHeight="337.5" prefWidth="500.0" GridPane.rowIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="500.0" prefWidth="500.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="78.0" minHeight="78.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="62.5" minHeight="62.5" prefHeight="62.5" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="72.0" minHeight="72.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <GridPane GridPane.rowIndex="5">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="71.0" prefWidth="71.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="71.0" prefWidth="71.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="71.0" prefWidth="71.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="71.0" minWidth="71.0" prefWidth="71.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="72.0" minWidth="72.0" prefWidth="72.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="72.0" minWidth="72.0" prefWidth="72.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="72.0" minWidth="72.0" prefWidth="72.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="72.0" minHeight="72.0" prefHeight="72.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="L" maxHeight="71.0" maxWidth="71.0" minHeight="71.0" minWidth="71.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="71.0" prefWidth="71.0" text="L" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.hgrow="NEVER" GridPane.valignment="CENTER" GridPane.vgrow="NEVER">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="T" maxHeight="71.0" maxWidth="71.0" minHeight="71.0" minWidth="71.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="71.0" prefWidth="71.0" text="T" textAlignment="CENTER" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="A" maxHeight="71.0" maxWidth="71.0" minHeight="71.0" minWidth="71.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="71.0" prefWidth="71.0" text="A" textAlignment="CENTER" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="F" maxHeight="71.0" maxWidth="71.0" minHeight="71.0" minWidth="71.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="71.0" prefWidth="71.0" text="F" textAlignment="CENTER" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="W" maxHeight="71.0" maxWidth="71.0" minHeight="71.0" minWidth="71.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="71.0" prefWidth="71.0" text="W" textAlignment="CENTER" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="C" maxHeight="71.0" maxWidth="71.0" minHeight="71.0" minWidth="71.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="71.0" prefWidth="71.0" text="C" textAlignment="CENTER" GridPane.columnIndex="5">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="I" maxHeight="71.0" maxWidth="71.0" minHeight="71.0" minWidth="71.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="71.0" prefWidth="71.0" text="I" textAlignment="CENTER" GridPane.columnIndex="6">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.rowIndex="6">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField editable="false" maxHeight="50.0" maxWidth="100.0" minHeight="50.0" minWidth="100.0" prefHeight="50.0" prefWidth="100.0" text="CART:">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="cart0" alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="cart1" alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="cart2" alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" prefHeight="50.0" prefWidth="50.0" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="Times New Roman" size="20.0" />
+                                 </font>
+                              </TextField>
+                              <Button fx:id="Checkout" maxHeight="50.0" maxWidth="125.0" minHeight="50.0" minWidth="125.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="50.0" prefWidth="125.0" text="CHECKOUT" GridPane.columnIndex="5">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font>
+                              </Button>
+                              <Button fx:id="Clear" maxHeight="50.0" maxWidth="125.0" minHeight="50.0" minWidth="125.0" mnemonicParsing="false" onAction="#buyStock" prefHeight="50.0" prefWidth="125.0" text="CLEAR" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font name="Times New Roman" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </GridPane>
+                        <TextArea fx:id="chat" editable="false" maxHeight="78.0" maxWidth="500.0" minHeight="78.0" minWidth="500.0" prefHeight="78.0" prefWidth="500.0">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font></TextArea>
+                        <TextField editable="false" text="Buy Stock:" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="13.0" />
+                           </font></TextField>
+                        <GridPane GridPane.rowIndex="3">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.5" minWidth="62.5" prefWidth="62.5" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.5" minWidth="62.5" prefWidth="62.5" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.5" minWidth="62.5" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.5" minWidth="62.5" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.5" minWidth="62.5" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.5" minWidth="62.5" prefWidth="100.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.5" minWidth="62.5" prefWidth="62.5" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="62.5" minWidth="62.5" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="62.5" minHeight="62.5" prefHeight="62.5" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="Keep" maxHeight="62.5" maxWidth="62.5" minHeight="62.5" minWidth="62.5" mnemonicParsing="false" onAction="#dispose" prefHeight="62.5" prefWidth="62.5" text="KEEP" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></Button>
+                              <Button fx:id="Trade" maxHeight="62.5" maxWidth="62.5" minHeight="62.5" minWidth="62.5" mnemonicParsing="false" onAction="#dispose" prefHeight="62.5" prefWidth="62.5" text="TRADE" textAlignment="CENTER" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></Button>
+                              <Button fx:id="Sell" maxHeight="62.5" maxWidth="62.5" minHeight="62.5" minWidth="62.5" mnemonicParsing="false" onAction="#dispose" prefHeight="62.5" prefWidth="62.5" text="SELL" textAlignment="CENTER" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></Button>
+                              <Button fx:id="MergeClear" maxHeight="62.5" maxWidth="62.5" minHeight="62.5" minWidth="62.5" mnemonicParsing="false" onAction="#dispose" prefHeight="62.5" prefWidth="62.5" text="CLEAR" textAlignment="CENTER" GridPane.columnIndex="6">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></Button>
+                              <Button fx:id="Done" maxHeight="62.5" maxWidth="62.5" minHeight="62.5" minWidth="62.5" mnemonicParsing="false" onAction="#dispose" prefHeight="62.5" prefWidth="62.5" text="DONE" textAlignment="CENTER" GridPane.columnIndex="7">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></Button>
+                              <TextField fx:id="Keepnum" alignment="CENTER" maxHeight="62.5" maxWidth="62.5" minHeight="62.5" minWidth="62.5" prefHeight="62.5" prefWidth="62.5" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="Tradenum" alignment="CENTER" maxHeight="62.5" maxWidth="62.5" minHeight="62.5" minWidth="62.5" prefHeight="62.5" prefWidth="62.5" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </TextField>
+                              <TextField fx:id="Sellnum" alignment="CENTER" maxHeight="62.5" maxWidth="62.5" minHeight="62.5" minWidth="62.5" prefHeight="62.5" prefWidth="62.5" GridPane.columnIndex="5">
+                                 <font>
+                                    <Font name="Times New Roman" size="24.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.rowIndex="2">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <TextField editable="false" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" prefHeight="25.0" prefWidth="125.0" text="Merge Stock:">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></TextField>
+                              <TextField fx:id="Mergename" editable="false" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></TextField>
+                              <TextField editable="false" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" prefHeight="25.0" prefWidth="125.0" text="Stocks Remaining:" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></TextField>
+                              <TextField fx:id="Totalnum" editable="false" maxHeight="25.0" maxWidth="125.0" minHeight="25.0" minWidth="125.0" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="3">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></TextField>
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.rowIndex="1">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="425.0" minWidth="425.0" prefWidth="425.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Button fx:id="submit" maxHeight="25.0" maxWidth="75.0" minHeight="25.0" minWidth="75.0" mnemonicParsing="false" onAction="#newChain" prefHeight="25.0" prefWidth="75.0" text="Submit" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></Button>
+                              <TextField fx:id="response" maxHeight="25.0" maxWidth="425.0" minHeight="25.0" minWidth="425.0" prefHeight="25.0" prefWidth="425.0">
+                                 <font>
+                                    <Font name="Times New Roman" size="13.0" />
+                                 </font></TextField>
+                           </children>
+                        </GridPane>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+            <GridPane>
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField fx:id="A1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="B1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="A2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="F1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.rowIndex="5">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="E1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="D1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="C7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="I1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.rowIndex="8">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="H1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.rowIndex="7">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G12" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="11" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G11" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="10" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G10" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="9" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G9" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="8" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G8" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="7" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G7" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G6" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G5" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G4" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="3" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G3" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G2" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="G1" alignment="CENTER" editable="false" maxHeight="75.0" maxWidth="75.0" minHeight="75.0" minWidth="75.0" prefHeight="75.0" prefWidth="75.0" GridPane.rowIndex="6">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </GridPane>
+            <GridPane GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.66667" minWidth="166.66667" prefWidth="166.66667" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.66667" minWidth="166.66667" prefWidth="166.66667" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.66666" minWidth="166.66666" prefWidth="166.66666" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TextField editable="false" maxHeight="25.0" maxWidth="166.66666" minHeight="25.0" minWidth="166.66666" prefHeight="25.0" prefWidth="166.66666" text="CASH:" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" maxHeight="25.0" maxWidth="166.66666" minHeight="25.0" minWidth="166.66666" prefHeight="25.0" prefWidth="166.66666" text="NET:" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="166.66666" minHeight="50.0" minWidth="166.66666" prefHeight="50.0" prefWidth="166.66666" text="Player1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="netplayer2" alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="166.66666" minHeight="50.0" minWidth="166.66666" prefHeight="50.0" prefWidth="166.66666" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cashplayer2" alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="166.66666" minHeight="50.0" minWidth="166.66666" prefHeight="50.0" prefWidth="166.66666" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="166.66666" minHeight="50.0" minWidth="166.66666" prefHeight="50.0" prefWidth="166.66666" text="Player2" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="netplayer1" alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="166.66666" minHeight="50.0" minWidth="166.66666" prefHeight="50.0" prefWidth="166.66666" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="cashplayer1" alignment="CENTER" editable="false" maxHeight="50.0" maxWidth="166.66666" minHeight="50.0" minWidth="166.66666" prefHeight="50.0" prefWidth="166.66666" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="Turn" editable="false">
+                     <font>
+                        <Font name="Times New Roman" size="13.0" />
+                     </font></TextField>
+               </children>
+            </GridPane>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="750.0" minWidth="750.0" prefWidth="750.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="125.0" minHeight="125.0" prefHeight="125.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="125.0" prefWidth="125.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="125.0" minHeight="125.0" prefHeight="125.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="tile0" contentDisplay="CENTER" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#put" prefHeight="125.0" prefWidth="125.0">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="tile1" contentDisplay="CENTER" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#put" prefHeight="125.0" prefWidth="125.0" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="tile2" contentDisplay="CENTER" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#put" prefHeight="125.0" prefWidth="125.0" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="tile3" contentDisplay="CENTER" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#put" prefHeight="125.0" prefWidth="125.0" GridPane.columnIndex="3">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="tile4" contentDisplay="CENTER" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#put" prefHeight="125.0" prefWidth="125.0" GridPane.columnIndex="4">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="tile5" contentDisplay="CENTER" maxHeight="125.0" maxWidth="125.0" minHeight="125.0" minWidth="125.0" mnemonicParsing="false" onAction="#put" prefHeight="125.0" prefWidth="125.0" GridPane.columnIndex="5">
+                           <font>
+                              <Font name="Times New Roman" size="30.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <GridPane GridPane.columnIndex="1">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="endgame" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#endGame" prefHeight="25.0" prefWidth="150.0" text="End Game" textAlignment="JUSTIFY" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="startgame" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#startgame" prefHeight="25.0" prefWidth="150.0" text="Start Game" textAlignment="JUSTIFY">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="switchturns" maxHeight="25.0" maxWidth="150.0" minHeight="25.0" minWidth="150.0" mnemonicParsing="false" onAction="#switchturns" prefHeight="25.0" prefWidth="150.0" text="Switch Turns" textAlignment="JUSTIFY" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </content>
+   <font>
+      <Font name="Times New Roman" size="13.0" />
+   </font>
+</TitledPane>
