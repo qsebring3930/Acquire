@@ -60,7 +60,12 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.example.acquire/com.example.acquire.HelloApplication</mainClass>
+                            <archive>
+                                <manifest>
+                                    <mainClass>com.Acquire.AcquireApp</mainClass>
+                                </manifest>
+                            </archive>
+                            <mainClass>com.Acquire.AcquireApp</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
